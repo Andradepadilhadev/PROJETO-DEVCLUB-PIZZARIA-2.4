@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Andrade Padilha" />
+  <meta name="keywords"
+    content="dev, front-end, web developer, programador, desenvolvedor, html, Tailwind, javascript" />
+  <meta name="description" content="Pjroeto de uma pizzaria fictícia com diversos tipos de pizza." />
+
+  <!--link.favicon,animate,Font Awesome,js-fontes, toastify-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="icon" href="./img/favicon-img.png" type="image/png" />
+
+  <link rel="stylesheet" href="styles/output.css" />
+
+  <!--META TAG OG-->
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="devClub pizzaria Pjroeto de uma pizzaria fictícia"/>
+  <meta property="og:description" content="pizzaria fictícia"/>
+  <meta property="og:site_name" content="DevClub Pizzaria"/>
+  <meta property="og:image" content=""/>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="./javascript/scripts.js" defer></script>
+
+  <title>DevClub Pizzaria</title>
+</head>
+
+<body>
+  <!--começo header-->
+  <header class="relative w-full h-[500px] overflow-hidden">
+    <div class="relative inset-0 z-10 flex flex-col justify-center items-center text-center">
+
+      <div class="flex justify-center items-center">
+        <img src="img/logo-gif1.gif" alt="logo-devclub"
+          class="relative w-72 h-25  hover:scale-110 duration-200  animate-pulse animate-infinite animate-duration-30000">
+      </div>
+
+
+
+      <h1 class="text-4xl md:text-7xl text-purple-800 mt-1.5 animate-bounce animate-infinite animate-duration-5000">Dev
+        Club Pizzaria </h1>
+
+
+      <span class="text-yellow-300 font-medium mt-5">Rua Andrade DevClub 2024 Curitiba - PR</span>
+      <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+        <span class="text-purple-600 font-medium">seg á dom - 08:00hs as 23:00hs</span>
+      </div>
+    </div>
+    <video autoplay muted loop class="absolute inset-0 w-full h-[500px] object-cover z-0 mt-1">
+      <source src="/img/video-background.mp4" type="video/mp4" />
+    </video>
+  </header>
+  <!-- fim header-->
+  <h2
+    class=" text-yellow-200 bg-gradient-to-r from-purple-900 via-purple-900 to- text-2xl md:text-4xl lg:text-5xl h-[60px] font-bold text-center mt-9 mb-6 ">
+    CARDÁPIO DE PIZZAS DEVCLUB
+  </h2>
+  <!-- INICIO MENU-->
+  <div id="menu">
+
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w7xl px-3 mb-16">
+      <!-- COMEÇO PODUTO ITEM 1-->
+      <div class="flex gap-3">
+        <img src="./img/pizza_coracao.jpg" alt="PIZZA RODOLFÃO"
+          class="w-50 h-40 rounded-md hover:scale-105 hover:-rotate-5 duation-500" />
+
+        <div>
+          <p class="font-medium text-yellow-400">PIZZA RODOLFÃO</p>
+          <p class=" text-xs sm:text-base">
+            Desfrute de nossa deliciosa <span class="text-purple-900 font-light"> pizza rodolfão</span> recheada de coração de frango, preparada
+            com uma massa leve e crocante que irá satisfazer seu paladar.
+          </p>
+          <div class="flex items-center gap-2 mt-3">
+            <p class="font-bold text-lg">R$ 89,90</p>
+
+            <button class="bg-purple-900 px-5 rounded add-to-cart-btn hover:scale-110" data-name="PIZZA RODOLFÃO"
+              date-price="89.90">
+              <i class="fa fa-cart-plus text-lg text-yellow-300 hover:scale-110"> </i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FIM PODUTO ITEM 1-->
+
+      <!-- COMEÇO PODUTO ITEM 2-->
+      <div class="flex gap-3">
+        <img src="./img/pizza_do_sul.jpg" alt="PIZZA DONA BONITA"
+          class="w-50 h-40 rounded-md hover:scale-105 hover:-rotate-4 duation-500" />
+
+        <div>
+          <p class="font-normal text-yellow-400">PIZZA DONA BONITA</p>
+          <p class="text-xs sm:text-base">
+            Delicie-se com a nossa irresistível <span class="text-purple-900 font-light">pizza Dona Bonita</span>, recheada com
+            calabresa picante, bacon, tomate e alho, tudo sobre uma massa leve
+            e crocante que certamente vai satisfazer o seu palada.
+          </p>
+          <div class="flex items-center gap-2 mt-3">
+            <p class="font-bold text-lg">R$ 79,90</p>
+
+            <button class="bg-purple-900 px-5 rounded add-to-cart-btn hover:scale-110" data-name="PIZZA DONA BONITA"
+              date-price="79.90">
+              <i class="fa fa-cart-plus text-lg text-yellow-300 hover:scale-110"> </i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FIM PODUTO ITEM 2-->
+
+      <!-- COMEÇO PODUTO ITEM 3-->
+      <div class="flex gap-3">
+        <img src="./img/PIZZA ABACATÃO.png" alt="PIZZA ABACATÃO"
+          class="w-50 h-40 rounded-md hover:scale-105 hover:-rotate-4 duation-500" />
+
+        <div>
+          <p class="font-medium text-yellow-400">PIZZA ABACATÃO</p>
+          <p class="text-xs sm:text-base">
+            Delicie-se com a nossa irresistível <span class="text-purple-900 font-light">pizza de abacate</span>, recheada com tomate seco, e acompanhada da nossa melhor azeitona, 
+            tudo sobre uma massa leve e crocante que certamente vai satisfazer o seu paladar.
+          </p>
+          <div class="flex items-center gap-2 mt-3">
+            <p class="font-bold text-lg">R$ 79,90</p>
+
+            <button class="bg-purple-900 px-5 rounded add-to-cart-btn hover:scale-110" data-name="PIZZA ABACATÃO"
+              date-price="79.90">
+              <i class="fa fa-cart-plus text-lg text-yellow-300 hover:scale-110"> </i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FIM PODUTO ITEM 3-->
+
+      <!-- COMEÇO PODUTO ITEM 4-->
+      <div class="flex gap-3">
+        <img src="./img/pizza_camarao.jpg" alt="PIZZA LAURÃO"
+          class="w-50 h-40 rounded-md hover:scale-105 hover:-rotate-4 duation-500" />
+
+        <div>
+          <p class="font-medium text-yellow-400">PIZZA LAURÃO DUTRA</p>
+          <p class="text-xs sm:text-base">
+            Experimente a nossa autêntica <span class="text-purple-900 font-light">Pizza Laurão</span> recheada com Camarão, generosamente
+            recheada com uma variedade de queijos e nossos suculentos camarões
+            frescos, sobre uma massa leve e crocante que certamente irá
+            satisfazer o seu paladar.
+          </p>
+          <div class="flex items-center gap-2 mt-3">
+            <p class="font-bold text-lg">R$ 99,90</p>
+
+            <button class="bg-purple-900 px-5 rounded add-to-cart-btn hover:scale-110" data-name="PIZZA LAURÃO"
+              date-price="99,90">
+              <i class="fa fa-cart-plus text-lg text-yellow-300 hover:scale-110"> </i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FIM PODUTO ITEM 4-->
+
+      <!-- COMEÇO PODUTO ITEM 5-->
+      <div class="flex gap-3">
+        <img src="./img/pizza_picanha.jpg" alt="PIZZA LAURÃO"
+          class="w-50 h-40 rounded-md hover:scale-105 hover:-rotate-4 duation-500" />
+
+        <div>
+          <p class="font-medium text-yellow-400">PIZZA PITTER BONOTO</p>
+          <p class="text-xs sm:text-base">
+            Experimente a nossa autêntica <span class="text-purple-900 font-light">Pizza Pitter Bonoto</span>, recheada com muita picanha e generosamente coberta com
+            uma variedade de queijos e nosso catupiry,
+            sobre uma massa leve e crocante que certamente irá satisfazer o seu paladar.
+          </p>
+          <div class="flex items-center gap-2 mt-3">
+            <p class="font-bold text-lg">R$ 99,90</p>
+
+            <button class="bg-purple-900 px-5 rounded add-to-cart-btn hover:scale-110" data-name="PIZZA PITTER BONOTO"
+              date-price="99,90">
+              <i class="fa fa-cart-plus text-lg text-yellow-300 hover:scale-110"> </i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FIM PODUTO ITEM 5-->
+
+      <!-- COMEÇO PODUTO ITEM 6-->
+      <div class="flex gap-3">
+        <img src="./img/pizza_bacon.jpg" alt="PIZZA WILLIAN POCINHOS"
+          class="w-50 h-40 rounded-md hover:scale-105 hover:-rotate-4 duation-500" />
+
+        <div>
+          <p class="font-medium text-yellow-400">PIZZA WILLIAN POCINHOS</p>
+          <p class="text-xs sm:text-base">
+            Experimente a nossa <span class="text-purple-900 font-light">Pizza Willian Pocinhos</span> recheada com muito Bacon, generosamente recheada com
+            muito queijo e bacon fresquinho, s obre uma massa leve e crocante
+            que certamente irá satisfazer o seu paladar.
+          </p>
+          <div class="flex items-center gap-2 mt-3">
+            <p class="font-bold text-lg">R$ 69,90</p>
+
+            <button class="bg-purple-900 px-5 rounded add-to-cart-btn hover:scale-110"
+              data-name="PIZZA WILLIAN POCINHOS" date-price="69.90">
+              <i class="fa fa-cart-plus text-lg text-yellow-300 hover:scale-110"> </i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FIM PODUTO ITEM 6-->
+
+      <!-- COMEÇO PODUTO ITEM 7-->
+      <div class="flex gap-3">
+        <img src="./img/pizza_tomate_seco_com_rucula.jpg" alt="PIZZA DE RÚCULA"
+          class="w-50 h-40 rounded-md hover:scale-105 hover:-rotate-4 duation-500" />
+
+        <div>
+          <p class="font-medium text-yellow-400">PIZZA STEVAN PADILHA</p>
+          <p class="text-xs sm:text-base">
+            Experimente a nossa <span class="text-purple-900 font-light">Pizza Stevan Padilha</span> com muita Rúcula, generosamente recheada com
+            muito tomate e muita rúcula fresquinha, sobre uma massa leve e
+            crocante que certamente irá satisfazer o seu paladar
+          </p>
+          <div class="flex items-center gap-2 mt-3">
+            <p class="font-bold text-lg">R$ 69,90</p>
+
+            <button class="bg-purple-900 px-5 rounded add-to-cart-btn hover:scale-110" data-name="PIZZA STEVAN PADILHA"
+              date-price="69.90">
+              <i class="fa fa-cart-plus text-lg text-yellow-300 hover:scale-110"> </i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FIM PODUTO ITEM 7-->
+
+      <!-- COMEÇO PODUTO ITEM 8-->
+      <div class="flex gap-3">
+        <img src="./img/pizza_coracao_com_catupiry.jpg" alt="PIZZA ANDRADE PADILHA"
+          class="w-50 h-40 rounded-md hover:scale-105 hover:-rotate-4 duation-500" />
+
+        <div>
+          <p class="font-medium text-yellow-400">PIZZA ANDRADE PADILHA</p>
+          <p class="text-xs sm:text-base">
+            Desfrute de nossa deliciosa <span class="text-purple-900 font-light">pizza Andrade Padilha</span> recheada de coração de frango recheada com muito catupiry, preparada
+            com uma massa leve e crocante que irá satisfazer seu paladar.
+          </p>
+          <div class="flex items-center gap-2 mt-3">
+            <p class="font-bold text-lg">R$ 69,90</p>
+
+            <button class="bg-purple-900 px-5 rounded add-to-cart-btn hover:scale-110" data-name="PIZZA ANDRADE PADILHA"
+              date-price="69.90">
+              <i class="fa fa-cart-plus text-lg text-yellow-300 hover:scale-110"> </i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FIM PODUTO ITEM 8-->
+    </main>
+
+    <div>
+      <h2
+        class=" text-yellow-300 bg-gradient-to-r from-purple-900 via-purple-900 to- text-2xl md:text-4xl h-[60px] font-bold text-center mt-9 mb-6">
+        CARDÁPIO DE BEBIDAS DEVCLUB
+      </h2>
+    </div>
+    <div class="relative">
+      <video autoplay muted loop class="relative inset-0 w-full h-[450px] object-cover z-0 mt-9 ">
+        <source src="./img/fundo-vinho.mp4" type="video/mp4" />
+      </video>
+      <div>
+        <h2
+          class=" text-yellow-300 bg-gradient-to-r from-purple-900 via-purple-900 to- text-2xl md:text-4xl h-[60px] font-bold text-center mt-9 mb-6">
+          VINHOS PREMIUM DEVCLUB
+        </h2>
+      </div>
+      <!-- COMEÇO GRID BEBIDAS-->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w7xl px-3 mb-16" id="menu">
+
+        <!-- COMEÇO BEBIDAS ITEM 1-->
+        <div class="flex gap-3 w-full">
+          <img src="./img/Vinho Francês Château Valandraud.png" alt=" Vinho Francês Château Valandraud"
+            class="w-60 h-40 rounded-md hover:scale-150 hover:-rotate-3 duation-500 mt-4" />
+          <div class="w-full">
+
+            <p class="font-medium text-yellow-400 mt-9">
+              VINHO FRANCÊS CHÂTEAU VALANDRAUD 1EP GRAND CRU CLASSÉ 2018 750ML.
+            </p>
+            <p class="text-base ">
+              Vinificação em cubas de inox termo reguladas, fermentação maloláctica em barricas.
+              Envelhecimento de 22 meses em barricas novas.
+            </p>
+            <div class="flex items-center gap-2 mt-3">
+              <p class="font-bold text-lg">R$ 8,349,90</p>
+
+              <button class="bg-purple-900 px-5 rounded add-to-cart-btn hover:scale-110"
+                data-name=" Vinho Francês Château Valandraud" date-price="8349.90">
+                <i class="fa fa-cart-plus text-lg text-yellow-300 hover:scale-110"> </i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- FIM BEBIDAS ITEM 1-->
+
+        <!-- COMEÇO BEBIDAS ITEM 2-->
+        <div class="flex gap-3 w-full">
+          <img src="./img/Vinho branco francês Denis Dubourdieu Chateau Doisy.png"
+            alt="Vinho branco francês Denis Dubourdieu Chateau Doisy"
+            class="w-60 h-40 rounded-md hover:scale-150 hover:-rotate-3 duation-500 mt-4" />
+          <div class="w-full">
+
+            <p class="font-medium text-yellow-400 mt-9">
+              VINHO BRANCO FRANCÊS DENIS DUBOURDIEU CHATEAU DOISY-DAËNE SAUTERNES L´EXTRAVAGANT 375ML
+            </p>
+            <p class="text-base ">
+              Vinho branco doce, com aroma de frutas em compota e mel, encorpado, com acidez alta e final persistente.
+            </p>
+            <div class="flex items-center gap-2 mt-3">
+              <p class="font-bold text-lg">R$ 5,119,90</p>
+
+              <button class="bg-purple-900 px-5 rounded add-to-cart-btn hover:scale-110"
+                data-name="Vinho branco francês Denis Dubourdieu Chateau Doisy" date-price="5119.90">
+                <i class="fa fa-cart-plus text-lg text-yellow-300 hover:scale-110"> </i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- FIM BEBIDAS ITEM 2-->
+
+
+        <!-- COMEÇO BEBIDAS ITEM 3-->
+        <div class="flex gap-3 w-full">
+          <img src="./img/VINHO tinto italiano Vesuvio Aglianico Beneventano IGT.png"
+            alt="vinho tinto italiano Vesuvio Aglianico Beneventano"
+            class="w-60 h-40 rounded-md hover:scale-150 hover:-rotate-3 duation-500 mt-4" />
+          <div class="w-full">
+
+            <p class="font-medium text-yellow-400 mt-9">
+              VINHO TINTO ITALIANO VESEVO AGLIANICO BENEVENTANO IGT 750ML.
+            </p>
+            <p class="text-base ">
+              Vinho tinto seco, com aroma de frutas negras e baunilha, taninos firmes e limpos.
+              Sua maturação é de 8 meses em barricas de carvalho
+            </p>
+            <div class="flex items-center gap-2 mt-3">
+              <p class="font-bold text-lg">R$ 168,90</p>
+
+              <button class="bg-purple-900 px-5 rounded add-to-cart-btn hover:scale-110"
+                data-name="vinho tinto italiano Vesuvio Aglianico Beneventano " date-price="168.90">
+                <i class="fa fa-cart-plus text-lg text-yellow-300 hover:scale-110"> </i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- FIM BEBIDAS ITEM 3-->
+
+        <!-- COMEÇO BEBIDAS ITEM 4-->
+        <div class="flex gap-3 w-full">
+          <img src="./img/Vinho tinto italiano Lombardo Marsala Superiore Ambra Dolce.png"
+            alt="Vinho tinto italiano Lombardo Marsala Superiore Ambra Dolce"
+            class="w-60 h-40 rounded-md hover:scale-150 hover:-rotate-3 duation-500 mt-4" />
+          <div class="w-full">
+
+            <p class="font-medium text-yellow-400 mt-9">
+              VINHO TINTO ITALIANO LOMBARDO MARSALA SUPERIORE AMBRA DOLCE 750ML
+            </p>
+            <p class="text-base ">
+              Vinho doce, com aromas de frutas, mel e notas balsâmicas, encorpado, com boa acidez e final persistente.
+              Sua maturação é de no mínimo de 24 meses em barricas de carvalho.
+            </p>
+            <div class="flex items-center gap-2 mt-3">
+              <p class="font-bold text-lg">R$ 174,90</p>
+
+              <button class="bg-purple-900 px-5 rounded add-to-cart-btn hover:scale-110"
+                data-name="Vinho tinto italiano Lombardo Marsala Superiore Ambra Dolce" date-price="174.90">
+                <i class="fa fa-cart-plus text-lg text-yellow-300 hover:scale-110"> </i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- FIM BEBIDAS ITEM 4-->
+
+        <!-- COMEÇO BEBIDAS ITEM 5-->
+        <div class="flex gap-3 w-full">
+          <img src="./img/vinho tinto italiano camigliano brunello di montalcino.png"
+            alt="vinho tinto italiano camigliano brunello di montalcino"
+            class="w-60 h-40 rounded-md hover:scale-150 hover:-rotate-3 duation-500 mt-4" />
+          <div class="w-full">
+
+            <p class="font-medium text-yellow-400 mt-9">
+              VINHO TINTO ITALIANO CAMIGLIANO BRUNELLO DI MONTALCINO 750ML
+            </p>
+            <p class="text-base ">
+              vinho tinto seco, com aroma de frutas negras e chocolate, encorpado, taninos finos e final complexo.
+              Sua maturação é de 24 meses em barris de carvalho francês e eslovênio mais 12 meses em garrafa.
+            </p>
+            <div class="flex items-center gap-2 mt-3">
+              <p class="font-bold text-lg">R$ 694,90</p>
+
+              <button class="bg-purple-900 px-5 rounded add-to-cart-btn hover:scale-110"
+                data-name="vinho tinto italiano camigliano brunello di montalcino" date-price="694.90">
+                <i class="fa fa-cart-plus text-lg text-yellow-300 hover:scale-110"> </i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- FIM BEBIDAS ITEM 5-->
+
+        <!-- COMEÇO BEBIDAS ITEM 6-->
+        <div class="flex gap-3 w-full">
+          <img src="./img/vinho tinto italiano luigi einaudi barolo ludo docg.png"
+            alt="vinho tinto italiano luigi einaudi barolo ludo docg"
+            class="w-60 h-40 rounded-md hover:scale-150 hover:-rotate-3 duation-500 mt-4" />
+          <div class="w-full">
+
+            <p class="font-medium text-yellow-400 mt-9">
+              VINHO TINTO ITALIANO LUIGI EINAUDI BAROLO LUDO DOCG 750ML
+            </p>
+            <p class="text-base ">
+              vinho tinto seco, com aroma de frutas e especiarias, encorpado, suculento e final longo
+            </p>
+            <div class="flex items-center gap-2 mt-3">
+              <p class="font-bold text-lg">R$ 1,099,90</p>
+
+              <button class="bg-purple-900 px-5 rounded add-to-cart-btn hover:scale-110"
+                data-name="vinho tinto italiano luigi einaudi barolo ludo docg" date-price="1099.90">
+                <i class="fa fa-cart-plus text-lg text-yellow-300 hover:scale-110"> </i>
+              </button>
+
+            </div>
+          </div>
+        </div>
+        <!-- FIM BEBIDAS ITEM 6-->
+      </div>
+      <!-- FIM DO GRID BEBIDAS-->
+    </div>
+    <!-- COMEÇO BEBIDAS ITEM 6-->
+    <h2 class="flex justify-center items-center  text-yellow-300 bg-gradient-to-r from-purple-950 via-purple-900 to-purple-600 
+    text-2xl md:text-2xl h-[40px] font-medium mt-5 mb-6 ">
+       Formas de Pagamento : Apps
+    </h2>
+    <div class="flex justify-center items-center">
+      <img src="./img/formas_pagamento.png" class="w-14 h-auto sm:mr-20 mr-5 sm:w-32 md:w-40 lg:w-40 xl:w-56 hover:scale-125 hover:-rotate-4 duration-500">
+      <img src="./img/logo_ifood.png" class="w-12 h-auto mr-5  sm:mr-20 my-5 sm:w-32 md:w-40 lg:w-40 xl:w-56 hover:scale-110 hover:-rotate-4 duration-500">
+      <img src="./img/google_play.png" class="w-12 h-auto  sm:mr-20 sm:w-28 md:w-36 lg:w-40 xl:w-56 hover:scale-125 hover:-rotate-4 duration-500">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- FIM MENU-->
+
+    <!-- COMEÇO MODAL CARD -->
+    <div class="bg-black/70 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal"
+      style="overflow: auto;">
+
+
+      <div
+        class=" text-yellow-300 bg-gradient-to-r from-purple-950 via-purple-500 to-purple-950  p-5 rounded-md min-w-[90%] md:min-w-[600px] ">
+        <h2 class=" text-center font-bold text-2xl text-yellow-300 mb-2">Meu Carrinho</h2>
+
+        <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+        <p class="font-bold text-green-700 animate-pulse"> Total: <span id="cart-total"> 0.000 </span></p>
+
+        <p class="font-medium text-yellow-300 mt-4">Endereço de entrega:</p>
+        <input type="text" placeholder="Digite seu endereço completo....." id="address"
+          class="w-full border-2 p-1 rounded my-1 focus:outline-none">
+
+
+        <P class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!</P>
+
+        <div class="flex items-center justify-between mt-5 w-full">
+          <button id="close-modal-btn" class="bg-green-600 text-yellow-300 px-4 py-1 rounded">Fechar</button>
+          <button id="checkout-btn" class="bg-green-600 text-yellow-300 px-4 py-1 rounded">Finalizar pedido</button>
+        </div>
+
+      </div>
+    </div>
+    <!-- FIM MODAL CARD-->
+
+    <!-- COMEÇO BUTTON CART FOOOTER-->
+    <footer
+      class="w-full text-yellow-300 bg-gradient-to-r from-purple-950 via-purple-900 to-purple-600 text-2xl py-2 fixed bottom-0 z-40 flex items-center justify-between px-6 mt-8 !important">
+
+      <button class="flex items-center text-xs sm:text-2xl gap-2 text-yellow-300 px-5 font-medium animate-pulse"
+        id="cart-btn">
+        <span id="cart-count">0</span>
+        Veja meu carrinho
+        <i class="fa fa-cart-plus text-lg text-yellow-300 px-6 rounded hover:scale-125 duration-400"></i>
+      </button>
+
+      <div class="flex items-center gap-3">
+        <a href="https://www.linkedin.com/in/andrade-padilha/" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin rounded-full hover:scale-150 hover:-rotate-4 duration-500"></i>
+        </a>
+        <a href="https://github.com/Andradepadilhadev" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github rounded-full hover:scale-150 hover:-rotate-3 duration-500"></i>
+        </a>
+        <h3 class="text-yellow-300 text-xs sm:text-2xl font-medium hover:scale-90"
+          title="Desenvolvido por Andrade Padilha">
+          Copyright &copy; 2024 - Desenvolvido por
+          <a class=" hover:scale-110" href="https://www.linkedin.com/in/andrade-padilha/" target="_blank">
+            <span>Andrade Padilha</span>
+          </a>
+        </h3>
+      </div>
+
+    </footer>
+    <!-- FIM BUTTON CARD FOOTER-->
+</body>
+
+</html>
