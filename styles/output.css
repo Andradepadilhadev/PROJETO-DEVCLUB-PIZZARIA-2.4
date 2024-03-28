@@ -951,6 +951,10 @@ video {
   height: 100vh;
 }
 
+.h-\[200px\] {
+  height: 200px;
+}
+
 .w-12 {
   width: 3rem;
 }
@@ -981,6 +985,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-96 {
+  width: 24rem;
 }
 
 .min-w-\[90\%\] {
