@@ -931,6 +931,26 @@ video {
   height: 100%;
 }
 
+.h-svh {
+  height: 100svh;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.h-3 {
+  height: 0.75rem;
+}
+
+.h-3\.5 {
+  height: 0.875rem;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
 .w-12 {
   width: 3rem;
 }
@@ -939,12 +959,12 @@ video {
   width: 3.5rem;
 }
 
-.w-60 {
-  width: 15rem;
+.w-40 {
+  width: 10rem;
 }
 
-.w-72 {
-  width: 18rem;
+.w-60 {
+  width: 15rem;
 }
 
 .w-\[this-is\\\\\] {
@@ -2854,6 +2874,10 @@ body {
 
   .sm\:w-32 {
     width: 8rem;
+  }
+
+  .sm\:w-72 {
+    width: 18rem;
   }
 
   .sm\:text-2xl {
