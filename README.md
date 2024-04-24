@@ -1,4 +1,4 @@
-<h1>🍕 DEVCLUB PIZZARIA 2.4🍕 EM HOMENAGEM À Dev Club ❤️ Este projeto é resultado do meu aprendizado na DevClub, sob a orientação do meu mentor, Rodolfo Morri. Estou extremamente satisfeito por mais um desafio concluído cada resultado e unico pra cima sempre !! 💪 🚀🌟</h1>
+<h1> 🏆Projeto vencedor do concurso Abacatão 🏆🍕 DEVCLUB PIZZARIA 2.4🍕 EM HOMENAGEM À Dev Club ❤️ Este projeto é resultado do meu aprendizado na DevClub, sob a orientação do meu mentor, Rodolfo Morri. Estou extremamente satisfeito por mais um desafio concluído cada resultado e unico pra cima sempre !! 💪 🚀🌟</h1>
 <br>
 
 <p><h3>▶️Funcionalidades Principais: Projeto de uma pizzaria fictícia com diversos tipos de pizza, e vinhos</h3>
